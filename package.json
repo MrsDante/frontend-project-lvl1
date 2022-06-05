@@ -1,6 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
+  "type": "module",
   "description": "[![Actions Status](https://github.com/MrsDante/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/MrsDante/frontend-project-lvl1/actions)",
   "main": "index.js",
   "scripts": {
@@ -16,8 +17,10 @@
     "url": "https://github.com/MrsDante/frontend-project-lvl1/issues"
   },
   "homepage": "https://github.com/MrsDante/frontend-project-lvl1#readme",
-  "type": "module",
   "bin": {
-  "brain-games": "bin/brain-games.js"
-}
+    "brain-games": "bin/brain-games.js"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
