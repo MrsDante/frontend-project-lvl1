@@ -4,3 +4,14 @@
 
 ### Maintainability Badge:
 [![Maintainability](https://api.codeclimate.com/v1/badges/c9d4aa3afa06feae6ff3/maintainability)](https://codeclimate.com/github/MrsDante/frontend-project-lvl1/maintainability)
+
+
+# Game List:
+
+1. **brain-games** - game with introduction
+2. **brain-even** - check a number for evenness 
+
+
+### Asclinema for BRAIN-EVEN:
+
+[![asciicast](https://asciinema.org/a/500143.svg)](https://asciinema.org/a/500143)

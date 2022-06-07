@@ -36,7 +36,7 @@ export const greetings = () => {
       }
       
     }
-   if(sumOfAnswers >= 2){
+   if(sumOfAnswers === 3){
     console.log(`Congratulations, ${userName}!`);
    }
   };
