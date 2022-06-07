@@ -30,8 +30,9 @@ export const greetings = () => {
       if (((number % 2 === 0) && (userAnswer === 'yes')) || ((number % 2 !== 0) && (userAnswer === 'no'))) {
         sumOfAnswers += 1;
         console.log('Correct!');
-      } else if (((number % 2 === 0) && (userAnswer === 'no')) || ((number % 2 !== 0) && (userAnswer === 'yes'))){
+      } else if (((number % 2 === 0) && (userAnswer === 'no')) || ((number % 2 !== 0) && (userAnswer === 'yes')) || ((userAnswer != 'yes') && (userAnswer != 'no'))){
         console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${oppositeAnswer}'. Let's try again, '${userName}!'`);
+        break;
       }
       
     }
