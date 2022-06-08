@@ -7,6 +7,9 @@ brain-games:
 brain-even: #Запуск игры с четностью
 	node bin/brain-even.js		
 
+brain-calc:
+    node bin/brain-calc.js
+
 publish: 
         npm publish --dry-run
 
