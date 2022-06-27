@@ -24,7 +24,7 @@ function gameQaA() {
   const numberOne =  getNumberOne();
   const numberTwo = getNumberTwo();
   
-  const question = `${numberOne}  ${numberTwo}`;
+  const question = `${numberOne} ${numberTwo}`;
     
   const correctAnswer = (gsd(numberOne, numberTwo)).toString();
     
