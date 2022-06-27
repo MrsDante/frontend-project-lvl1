@@ -11,6 +11,7 @@
 1. **brain-games** - game with introduction
 2. **brain-even** - check a number for evenness 
 3. **brain-gcd** - calculate the greatest common divisor of 2 numbers
+4. **brain-progression** - calculate and enter missing number from progression
 
 
 ### Asclinema for BRAIN-EVEN:
@@ -22,3 +23,6 @@
 
 ### Asclinema for BRAIN-GCD:
 [![asciicast](https://asciinema.org/a/504448.svg)](https://asciinema.org/a/504448)
+
+### Asclinema for BRAIN-PROGRESSION:
+[![asciicast](https://asciinema.org/a/504456.svg)](https://asciinema.org/a/504456)
