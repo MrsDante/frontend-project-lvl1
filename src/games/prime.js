@@ -6,10 +6,12 @@ const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".
 const isPrimeNumber = (n) => {
   if (n < 2) {
     return 'no';
-  } else if (n === 2) {
+  }
+  
+  if (n === 2) {
     return 'yes';
   }
-    
+
   let i = 2;
   const limit = Math.sqrt(n);
   while (i <= limit) {
