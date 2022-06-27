@@ -5,5 +5,3 @@
 import { calcGame } from '../src/games/calc.js';
 
 calcGame();
-
-//'../src/games/cli-calc.js'
