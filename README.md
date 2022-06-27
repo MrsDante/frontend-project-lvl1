@@ -12,6 +12,8 @@
 2. **brain-even** - check a number for evenness 
 3. **brain-gcd** - calculate the greatest common divisor of 2 numbers
 4. **brain-progression** - calculate and enter missing number from progression
+5. **brain-prime** - check a number for primality
+
 
 
 ### Asclinema for BRAIN-EVEN:
@@ -26,3 +28,6 @@
 
 ### Asclinema for BRAIN-PROGRESSION:
 [![asciicast](https://asciinema.org/a/504456.svg)](https://asciinema.org/a/504456)
+
+### Asclinema for BRAIN-PRIME:
+[![asciicast](https://asciinema.org/a/504463.svg)](https://asciinema.org/a/504463)

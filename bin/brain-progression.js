@@ -2,7 +2,7 @@
 
 /* eslint-disable import/no-unresolved */
 
-import { progression } from '../src/progression.js';
+import { progression } from '../src/games/progression.js';
 
 progression();
 
