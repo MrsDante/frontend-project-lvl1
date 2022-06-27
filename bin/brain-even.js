@@ -2,7 +2,7 @@
 
 /* eslint-disable import/no-unresolved */
 
-import { greetings } from '../src/games/even.js';
+import { even } from '../src/games/even.js';
 
-greetings();
+even();
 

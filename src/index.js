@@ -3,16 +3,17 @@
 /* eslint-disable no-undef */
 import readlineSync from 'readline-sync';
 
-export const mainLogic = (intro, core) => {
-  const roundsCount = 3;
+const mainLogic = (gameRules, gameQaA) => {
 
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
-  console.log(intro);
+  console.log(gameRules);
+
+  const roundsCount = 3;
 
   for (let i = 1; i <= roundsCount; i += 1) {
-    const [question, correctAnswer] = core();
+    const [question, correctAnswer] = gameQaA();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer !== correctAnswer) {
@@ -23,3 +24,5 @@ export const mainLogic = (intro, core) => {
   }
   return console.log(`Congratulations, ${userName}!`);
 };
+
+export default mainLogic;

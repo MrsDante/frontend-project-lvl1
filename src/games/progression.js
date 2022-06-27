@@ -1,9 +1,7 @@
-/* eslint-disable no-console */
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/prefer-default-export */
-import readlineSync from 'readline-sync';
-// Wait for user's response.
-// eslint-disable-next-line import/prefer-default-export
+import mainLogic from '../index.js';
+import getRandomNumber from '../getRandomNumber.js';
+
+const gameRules = 'What number is missing in the progression?';
 
 const generateProgression = (startNumber, progressionStep, progressionLength) => {
     const progressionArray = [];
@@ -13,45 +11,21 @@ const generateProgression = (startNumber, progressionStep, progressionLength) =>
     return progressionArray;
 };
 
-const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+function gameQaA() {
+  const startNumber = getRandomNumber(1, 10);
+  const progressionStep = getRandomNumber(1, 10);
+  const progressionLength = getRandomNumber(5, 10);
+  
+  const progressionGame = generateProgression(startNumber, progressionStep, progressionLength);
 
-export const progression = () => {
-    console.log('Welcome to the Brain Games!');
-    const userName = readlineSync.question('May I have your name? ');
-    console.log(`Hello, ${userName}!`);
+  const missingNumber = getRandomNumber(0, progressionLength - 1);
+  const correctAnswer = String(progressionGame[missingNumber]);
 
-    console.log('What number is missing in the progression?');
-    let roundsCount = 3;
-    let sumOfAnswers = 0;
+  progressionGame[missingNumber] = '..';
 
-    for (let i = 1; i <= roundsCount; i += 1) {
-        const startNumber = getRandomNumber(1, 10);
-        const progressionStep = getRandomNumber(1, 10);
-        const progressionLength = getRandomNumber(5, 10);
+  const question = progressionGame.join(' ');
+    
+  return [question, correctAnswer];
+  };
 
-        const progressionGame = generateProgression(startNumber, progressionStep, progressionLength);
-
-        const missingNumber = getRandomNumber(0, progressionLength - 1);
-        const correctAnswer = String(progressionGame[missingNumber]);
-
-        progressionGame[missingNumber] = '..';
-
-        const question = progressionGame.join(' ');
-
-        console.log('Question: ' + question);
-        const userAnswer = readlineSync.question('Your answer: ');
-
-        if(userAnswer == correctAnswer){
-            sumOfAnswers += 1;
-            console.log('Correct!');
-          }else{
-            console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. Let's try again, '${userName}!'`);
-          break;
-        }
-
-    }
-    if(sumOfAnswers === 3){
-        console.log(`Congratulations, ${userName}!`);
-    }
-
-}
+export const progression = () => mainLogic(gameRules, gameQaA);
