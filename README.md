@@ -10,6 +10,7 @@
 
 1. **brain-games** - game with introduction
 2. **brain-even** - check a number for evenness 
+3. **brain-gcd** - calculate the greatest common divisor of 2 numbers
 
 
 ### Asclinema for BRAIN-EVEN:
@@ -18,3 +19,6 @@
 
 ### Asclinema for BRAIN-CALC:
 [![asciicast](https://asciinema.org/a/504379.svg)](https://asciinema.org/a/504379)
+
+### Asclinema for BRAIN-GCD:
+[![asciicast](https://asciinema.org/a/504448.svg)](https://asciinema.org/a/504448)

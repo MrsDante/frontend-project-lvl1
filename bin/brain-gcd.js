@@ -2,7 +2,6 @@
 
 /* eslint-disable import/no-unresolved */
 
-import { greetings } from '../src/games/even.js';
+import { gcd } from '../src/gcd.js';
 
-greetings();
-
+gcd();
