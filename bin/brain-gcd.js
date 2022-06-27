@@ -2,6 +2,6 @@
 
 /* eslint-disable import/no-unresolved */
 
-import { gcd } from '../src/gcd.js';
+import { gcd } from '../src/games/gcd.js';
 
 gcd();
