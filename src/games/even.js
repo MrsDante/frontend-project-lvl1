@@ -4,7 +4,10 @@ import mainLogic from '../index.js';
 const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const isEvenNumber = (number) => {
-return number % 2 === 0 ? 'yes' : 'no'
+  if (number % 2 === 0) {
+    return 'yes';
+  }
+return 'no';
 };
 
 function gameQaA() {

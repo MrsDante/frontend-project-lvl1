@@ -7,7 +7,7 @@ const isPrimeNumber = (n) => {
   if (n < 2) {
     return 'no';
   }
-  
+
   if (n === 2) {
     return 'yes';
   }
