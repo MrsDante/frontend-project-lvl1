@@ -15,4 +15,6 @@ function gameQaA() {
   return [question, correctAnswer];
 }
 
-export const even = () => mainLogic(gameRules, gameQaA);
+const even = () => mainLogic(gameRules, gameQaA);
+
+export default even;

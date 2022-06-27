@@ -30,4 +30,6 @@ function gameQaA() {
   return [question, correctAnswer];
 }
 
-export const gcd = () => mainLogic(gameRules, gameQaA);
+const gcd = () => mainLogic(gameRules, gameQaA);
+
+export default gcd;

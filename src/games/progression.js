@@ -26,4 +26,6 @@ function gameQaA() {
   return [question, correctAnswer];
 }
 
-export const progression = () => mainLogic(gameRules, gameQaA);
+const progression = () => mainLogic(gameRules, gameQaA);
+
+export default progression;

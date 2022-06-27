@@ -2,6 +2,6 @@
 
 /* eslint-disable import/no-unresolved */
 
-import { calcGame } from '../src/games/calc.js';
+import calcGame from '../src/games/calc.js';
 
 calcGame();

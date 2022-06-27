@@ -2,6 +2,6 @@
 
 /* eslint-disable import/no-unresolved */
 
-import { primeGame } from '../src/games/prime.js';
+import primeGame from '../src/games/prime.js';
 
 primeGame();

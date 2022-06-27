@@ -31,4 +31,6 @@ function gameQaA() {
   return [question, correctAnswer];
 }
 
-export const primeGame = () => mainLogic(gameRules, gameQaA);
+const primeGame = () => mainLogic(gameRules, gameQaA);
+
+export default primeGame;

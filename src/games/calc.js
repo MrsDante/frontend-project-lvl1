@@ -1,7 +1,7 @@
 import mainLogic from '../index.js';
 import getRandomNumber from '../getRandomNumber.js';
 
-const gameRules = 'What is the result of the expression?';
+const rules = 'What is the result of the expression?';
 
 const getNumberOne = () => {
   const num = Math.round(Math.random() * 100);
@@ -36,6 +36,8 @@ function gameQaA() {
   const correctAnswer = calculate(numberOne, numberTwo, randomOperator).toString();
 
   return [question, correctAnswer];
-};
+}
 
-export const calcGame = () => mainLogic(gameRules, gameQaA);
+const calcGame = () => mainLogic(rules, gameQaA);
+
+export default calcGame;
