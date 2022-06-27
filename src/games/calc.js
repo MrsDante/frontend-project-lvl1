@@ -33,9 +33,8 @@ function gameQaA() {
 
   const randomOperator = mathOperators[getRandomNumber(0, mathOperators.length - 1)];
   const question = `${numberOne} ${randomOperator} ${numberTwo}`;
-  
   const correctAnswer = calculate(numberOne, numberTwo, randomOperator).toString();
-  
+
   return [question, correctAnswer];
 };
 

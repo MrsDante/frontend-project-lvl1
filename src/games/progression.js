@@ -22,8 +22,8 @@ function gameQaA() {
   progressionGame[missingNumber] = '..';
 
   const question = progressionGame.join(' ');
-    
+
   return [question, correctAnswer];
-};
+}
 
 export const progression = () => mainLogic(gameRules, gameQaA);

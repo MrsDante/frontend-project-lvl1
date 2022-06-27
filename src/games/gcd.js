@@ -15,19 +15,19 @@ const getNumberTwo = () => {
 const gsd = (numberOne, numberTwo) => {
   if (!numberTwo) {
     return numberOne;
-    }
-  return gsd(numberTwo, numberOne % numberTwo)
-  };
+  }
+  return gsd(numberTwo, numberOne % numberTwo);
+};
 
 function gameQaA() {
   const numberOne = getNumberOne();
   const numberTwo = getNumberTwo();
-  
+
   const question = `${numberOne} ${numberTwo}`;
-    
+
   const correctAnswer = (gsd(numberOne, numberTwo)).toString();
-    
+
   return [question, correctAnswer];
-  };
+}
 
 export const gcd = () => mainLogic(gameRules, gameQaA);

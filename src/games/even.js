@@ -13,6 +13,6 @@ function gameQaA() {
   const correctAnswer = isEvenNumber(number);
 
   return [question, correctAnswer];
-};
+}
 
 export const even = () => mainLogic(gameRules, gameQaA);
